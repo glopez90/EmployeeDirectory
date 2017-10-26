@@ -1,0 +1,60 @@
+@font-face { font-family: Dosis; src: url('{!! asset('fonts/Dosis-Regular.otf') !!}'); }
+
+.jaz-style {
+  background-color:#1c80df;
+  background-size: 20%;
+  border-color: transparent;
+  box-shadow: 0 8px 0 #07569e, inset 0 -1px 0 1px #47a3fb;
+}
+
+.jaz-text {
+  font: 700 22px/22px Dosis,sans-serif;
+  padding: 10px 40px;
+  display: block;
+  position: relative;
+}
+
+.jaz-back {
+  line-height: 1.42857143;
+  color: #414042;
+  background: url(/assets/images/stripe-tile.png);
+}
+
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}
