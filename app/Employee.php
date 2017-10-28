@@ -15,5 +15,6 @@ class Employee extends Model
       'workPhone',
       'personalPhone',
       'picture',
+      'location',
       'dateStarted' ];
 }

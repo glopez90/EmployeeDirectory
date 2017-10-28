@@ -23,6 +23,7 @@ class CreateEmployeeTable extends Migration
             $table->bigInteger('personalPhone')->nullable();
             $table->string('email');
             $table->string('picture')->nullable();
+            $table->string('location')->nullable();
             $table->date('dateStarted')->nullable();
             $table->timestamps();
         });

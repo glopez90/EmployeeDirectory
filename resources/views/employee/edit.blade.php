@@ -52,6 +52,10 @@
        </div>
       </div>
       <div class="form-group row">
+        {!! Form::label('location','Location', ['class'=>'col-sm-2 col-form-label']) !!}
+        <div class="col-sm-4">
+          {!! Form::text('location', null, ['class'=>'form-control']) !!}
+        </div>
         {!! Form::label('picture','Picture', ['class'=>'col-sm-2 col-form-label']) !!}
         <div class="col-sm-4">
           {!! Form::file('picture', null, ['class'=>'form-control']) !!}

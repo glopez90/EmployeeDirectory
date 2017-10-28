@@ -27,6 +27,7 @@ class EmployeeController extends Controller
   //   }
   // }
 
+//Add method to search for offices
   public function welcome1($search)
   {
 
