@@ -43,7 +43,7 @@
             @else
               <img class="rounded-circle img-fluid d-block mx-auto" src="{{asset('images/unknow.jpg')}}" alt="">
             @endif
-            <h3>{{ $employee->firstName.' '.$employee->lastName }} <br>
+            <h3>{{ $employee->firstName.' '.$employee->lastName }}<br>
             <small>{{ $employee->title }} ({{ $employee->department }})</small></h3>
             <!-- <p><i class="fa fa-envelope-o" aria-hidden="true"> {{ $employee->email }}</i> <br> -->
               <p><i class="fa fa-envelope-o" aria-hidden="true"> {{ $employee->email }}</i> <br>
@@ -54,7 +54,9 @@
             @if(!empty(Auth::user()->email) && $employee->personalPhone && Auth::user()->email == 'admin@jazwares.com')
               <i class="fa fa-mobile" aria-hidden="true"> {{ substr_replace(substr_replace($employee->personalPhone,'-',3,0),'-',7,0) }}</i>
             @endif
-
+            @if($employee->location)
+              <i class="fa fa-globe" aria-hidden="true"> {{ $employee->location }}</i>
+            @endif
             </p>
         </div>
         @endforeach
