@@ -39,9 +39,9 @@
         @foreach($employees as $employee)
           <div class="col-lg-3 col-sm-6 text-center mb-4">
             @if(!empty($employee['picture']))
-              <img class="rounded-circle img-fluid d-block mx-auto" src="{{asset('images/'.$employee->picture)}}" alt="">
+              <img class="rounded-circle img-fluid d-block mx-auto face" src="{{asset('images/'.$employee->picture)}}" alt="">
             @else
-              <img class="rounded-circle img-fluid d-block mx-auto" src="{{asset('images/unknow.jpg')}}" alt="">
+              <img class="rounded-circle img-fluid d-block mx-auto face" src="{{asset('images/unknow.jpg')}}" alt="">
             @endif
             <h3>{{ $employee->firstName.' '.$employee->lastName }}<br>
             <small>{{ $employee->title }} ({{ $employee->department }})</small></h3>
@@ -53,6 +53,7 @@
             @endif
             @if(!empty(Auth::user()->email) && $employee->personalPhone && Auth::user()->email == 'admin@jazwares.com')
               <i class="fa fa-mobile" aria-hidden="true"> {{ substr_replace(substr_replace($employee->personalPhone,'-',3,0),'-',7,0) }}</i>
+              <br>
             @endif
             @if($employee->location)
               <i class="fa fa-globe" aria-hidden="true"> {{ $employee->location }}</i>
