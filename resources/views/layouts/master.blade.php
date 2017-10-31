@@ -67,7 +67,7 @@
     <!-- Footer -->
     <footer class="jaz-style footer" style="padding: 2em">
         <div class="container">
-            <p class="m-0 text-center text-white jaz-text">Copyright &copy; Jazwares <?php echo date("Y"); ?> <small>v1-alpha</small></p>
+            <p class="m-0 text-center text-white jaz-text">Copyright &copy; Jazwares <?php echo date("Y"); ?></p>
         </div>
     </footer>
 
