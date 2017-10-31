@@ -49,7 +49,7 @@ class EmployeeController extends Controller
   public function index()
   {
     if(Auth::check() && Auth::user()->email == 'admin@jazwares.com'){
-      $employees = Employee::orderBy('created_at', 'desc')->get();
+      $employees = Employee::orderBy('firstName', 'asc')->get();
       return view('employee.index', compact('employees'));
     }
     // if(Auth::guest())
