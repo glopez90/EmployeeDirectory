@@ -5,10 +5,10 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Company Employee Directory">
+    <meta name="author" content="Gabriel Lopez">
 
-    <title>Jazwares - Employees </title>
+    <title>Company - Employees </title>
 
     <!-- Bootstrap core CSS -->
     <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -46,7 +46,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
-            <a class="navbar-brand jaz-text" href="{{ url('/') }}">Jazwares Employee Directory</a>
+            <a class="navbar-brand jaz-text" href="{{ url('/') }}">Company Employee Directory</a>
             <div class="collapse navbar-collapse" id="navbarExample">
                 <ul class="navbar-nav ml-auto">
                   @yield('header')
@@ -67,7 +67,7 @@
     <!-- Footer -->
     <footer class="jaz-style footer" style="padding: 2em">
         <div class="container">
-            <p class="m-0 text-center text-white jaz-text">Copyright &copy; Jazwares <?php echo date("Y"); ?></p>
+            <p class="m-0 text-center text-white jaz-text">Copyright &copy; Company <?php echo date("Y"); ?></p>
         </div>
     </footer>
 
